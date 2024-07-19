@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default (light mode) colors */
+:root {
+  --foreground-rgb: 255, 255, 255; /* White text for light mode */
+  --background-start-rgb: 0, 0, 0; /* Black background start for light mode */
+  --background-end-rgb: 0, 0, 0; /* Black background end for light mode */
+}
+
+/* Dark mode colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255; /* White text for dark mode */
+    --background-start-rgb: 0, 0, 0; /* Black background start for dark mode */
+    --background-end-rgb: 0, 0, 0; /* Black background end for dark mode */
+  }
+}
+
+/* Apply background and text color */
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Custom utility class */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
