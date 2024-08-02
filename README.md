@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sathyabama Bus Hackathon Project
 
-## Getting Started
+## College Transport Application
 
-First, run the development server:
+### Project Overview
+  
+<div align="center">
+  <video width="600" controls>
+    <source src="public/VIDEO.mov" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project was developed as part of the Hack the Chit hackathon competition. The College Transport Application is designed to manage and optimize the transportation system for Sathyabama College, offering various features such as bus timing schedules, real-time tracking, crowd management, notifications, route information, feedback and ratings, user authentication, admin panel functionalities, and more.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Bus Timing Schedules**: Provides detailed schedules for bus timings, ensuring students and staff can plan their travel efficiently.
+2. **Real-Time Tracking**: Tracks the real-time location of buses, allowing users to see the exact position and estimated arrival times.
+3. **Crowd Management**: Helps in managing the crowd by displaying the number of passengers in each bus.
+4. **Notifications**: Sends notifications to users about bus arrivals, delays, and other important information.
+5. **Route Information**: Displays detailed route information, including start and end points, and multiple pick-up points.
+6. **Feedback and Ratings**: Allows users to rate drivers and provide feedback on the transportation service.
+7. **User Authentication**: Ensures secure access to the application through user authentication.
+8. **Admin Panel Functionalities**: Enables the admin to manage bus details, driver information, routes, and more.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Tech Stack
 
-## Learn More
+- **Frontend**: React, Next.js, TypeScript
+- **Backend**: Appwrite for database management
+- **Mapping**: Mapbox for displaying bus routes and real-time tracking
+- **UI Components**: Tailwind CSS, DaisyUI
+- **AI Integration**: Lumin AI for advanced features
 
-To learn more about Next.js, take a look at the following resources:
+### Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **mockdata.ts**: Contains mock data for buses and routes.
+- **constants.ts**: Defines constants for bus numbers, routes, and accessibility features for pick-up points.
+- **index.ts**: Sample driver details for the rating and search functionality.
+- **SOS Alert System**: Sends bus number and details to the Appwrite collection in case of emergencies.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Setup and Installation
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/college-transport-app.git
